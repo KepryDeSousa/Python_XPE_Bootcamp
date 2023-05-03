@@ -1,0 +1,4 @@
+o que é o css?
+é estilo (cor, posição,tamanho), HTML e a estrutura
+(tags)
+sem o css o nosso documento HTML é disforme
