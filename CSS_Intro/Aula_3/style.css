@@ -1,0 +1,13 @@
+h2{
+    background-color: indigo;
+    width: 30px;
+    height: 30px;
+    /*Width : horizontal
+      height : vertical
+    */
+}
+div{
+    background-color: green;
+    width: 50px;
+    height: 30px;
+}
