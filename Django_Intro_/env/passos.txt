@@ -1,0 +1,17 @@
+verificar a versão usada (para caso seja nescessario atualizar)
+
+criar o ambiente virtual :
+     python3 -m venv ./env
+ ativar:
+    source ./env/bin/activate
+
+    (env) @KepryDeSousa ➜ /workspaces/Python_XPE_Bootcamp/Django_Intro (main) $ 
+
+instalando django: 
+    pip install django
+    verificar versão do django instalado 
+
+    pip freeze > requeriments.txt
+    desta forma tems as versões do nosso codigo para um futuro acesso
+    evitar alguns erros
+    
