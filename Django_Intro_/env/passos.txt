@@ -1,17 +1,61 @@
 verificar a versão usada (para caso seja nescessario atualizar)
 
-criar o ambiente virtual :
+Criar o ambiente virtual :
      python3 -m venv ./env
  ativar:
     source ./env/bin/activate
 
     (env) @KepryDeSousa ➜ /workspaces/Python_XPE_Bootcamp/Django_Intro (main) $ 
-
-instalando django: 
+-------------------------------------------------------------------------------------------------
+Instalando django: 
     pip install django
     verificar versão do django instalado 
 
     pip freeze > requeriments.txt
     desta forma tems as versões do nosso codigo para um futuro acesso
     evitar alguns erros
-    
+----------------------------------------------------------------------------------------------------
+
+Criar um projeto apartir do django 
+    django-admin startproject "Nome do projeto"
+
+pos criar seu projeto levantaremos o nosso server
+
+python manage.py runserver
+
+------------------------------------------------------------------------------------------------------------------
+Criação de aplicativo no django:
+    python manage.py startapp "Nome do app"
+
+-------------------------------------------------------------------------------
+Criação de Models
+    para criar os models é nescessario desenvolver a classe  model
+    e executar o comando
+
+    python manege.py makemigrations
+
+    aplicação de migrações (desenvolver as tabelas)
+
+    python manege.py migrate
+
+----------------------------------------------------------------------------------------------------
+python Shell :
+    python manege.py shell 
+        serve para manipular os models
+        {
+
+            from "App".models import User
+            usaremos comandos ORMS
+            para verificar se o modelo esta okay 
+            "tabelas"
+        }
+
+----------------------------------------------------------------------------------------------------------
+Area Adm django:
+    deve se criar um superUser para o seu userDjango
+    Criar user root:
+        python manege.py createsuperuser
+
+    Acessar:
+    levante o serve e use no final da url /admin/
+    é interessante registar os models paa o admin poder manipula-los
